@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(screencapture -x /private/tmp/claude-501/-Users-Rachelreust-Desktop-Rachel-Reust-Website/f5ac1ad6-798b-4be6-9e10-be913b4eb8f9/scratchpad/mobile-toggle-check.png)",
+      "Bash(osascript -e 'tell application \"Google Chrome\" to activate')"
+    ]
+  }
+}

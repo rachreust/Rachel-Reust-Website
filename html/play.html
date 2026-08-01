@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+     <link rel="stylesheet" href="css/index.css">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3KT3T6PNGS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3KT3T6PNGS');
+</script>
+
+</head>
+<body>
+
+  <!-- LEFT SIDEBAR NAV -->
+  <nav id="navBar" aria-label="Primary">
+    <h2 class="logo">
+      <a href="/index.html#heroGrid" style="color:inherit; text-decoration:none;">LOGO</a>
+    </h2>
+
+    <div id="sideNavigation">
+      <!-- These should route back to your one-page hub -->
+      <a href="#caseStudyHero" class="highlight">Home</a>
+      <a href="/index.html#infoSection" class="highlight">About Me</a>
+
+      <!-- Case Studies accordion -->
+      <div class="navGroup">
+        <a class="highlight navTrigger" href="/index.html#studies">Case Studies ▾</a>
+
+        <div class="subMenu">
+          <a href="/case-studies/project-90.html">Project 90</a>
+          <a href="/case-studies/intake-redesign.html">Intake Redesign</a>
+          <a href="/case-studies/dashboard.html">Dashboard</a>
+          <a href="/case-studies/mobile-app.html">Mobile Workflow</a>
+        </div>
+      </div>
+
+      <a href="/index.html#services" class="highlight">Services</a>
+      <a href="#contact" class="highlight">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE WRAPPER (THIS is what your CSS expects for margin-left) -->
+  <main id="page">
+<!-- Sticky Case Study Secondary Nav -->
+<nav class="csNav" class="csNavContainer" aria-label="Case Study Sections">
+  <a href="#caseStudyHero" class="active">Overview</a>
+  <a href="#problem">Problem</a>
+  <a href="#process">Process</a>
+  <a href="#research">Research</a>
+  <a href="#definition">Definition</a>
+  <a href="#ideation">Ideation</a>
+  <a href="#prototyping">Prototyping</a>
+  <a href="#testing">Testing</a>
+  <a href="#closing">Closing</a>
+</nav>
+    <!-- HERO / INTRO -->
+
+    <section id="caseStudyHero" class="section">
+        <div class="container">
+        <p class="dash-title">Modernizing Case Management Workflows</p>
+      </div>
+    </section>
+
+
+    <!-- PROBLEM -->
+    <section id="problem" class="section">
+      <div class="container">
+        <div class="dash-header">
+          <h2 class="dash-title">The Problem</h2>
+        <div class="twoCol">
+          <div>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+          <h2 class="dash-title">The Process</h2>
+       
+    
+        <!-- ONE ROW: left stack (timeline+team) + right (roles) -->
+        <div class="dash-grid-2">
+          <!-- LEFT COLUMN: stack two small cards -->
+          <div class="dash-stack">
+            <!-- Card 1: Project Timeline -->
+            <article class="card">
+              <div class="card-header">
+                <h3 class="card-title">Project Timeline</h3>
+                <p class="card-meta">High-level phases and duration</p>
+              </div>
+    
+              <div class="card-body">
+                <ul class="legend timeline-legend" aria-label="Project timeline">
+                  <li>
+                    <span>Discovery</span>
+                    <span class="connector"></span>
+                    <span class="highlight">2 wks</span>
+                  </li>
+                  <li>
+                    <span>Define + Design</span>
+                    <span class="connector"></span>
+                    <span class="muted">3 wks</span>
+                  </li>
+                  <li>
+                    <span>Test + Iterate</span>
+                    <span class="connector"></span>
+                    <span class="muted">1 wk</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+    
+            <!-- Card 1B: Team (small) -->
+            <article class="card">
+              <div class="card-header">
+                <h3 class="card-title">Team</h3>
+                <p class="card-meta">Who I partnered with</p>
+              </div>
+    
+              <div class="card-body">
+                <ul class="legend team-legend" aria-label="Team composition">
+                  <li>
+                    <span>Me</span>
+                    <span class="connector"></span>
+                    <span class="muted">Product Designer</span>
+                  </li>
+                  <li>
+                    <span>PM</span>
+                    <span class="connector"></span>
+                    <span class="muted">1</span>
+                  </li>
+                  <li>
+                    <span>Engineering</span>
+                    <span class="connector"></span>
+                    <span class="muted">2</span>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+    
+          <!-- RIGHT COLUMN: Roles -->
+          <article class="card">
+            <div class="card-header">
+              <h3 class="card-title">My UX/UI Roles</h3>
+              <p class="card-meta">Primary contributions</p>
+            </div>
+    
+            <div class="card-body">
+              <div class="card-body"><p class="muted"> I took a hands-on approach to tackling these challenges:.......</p></div>
+              <div class="bars">
+                <div class="bar-row">
+                  <div class="bar-top">
+                    <span class="bar-label">UX Research</span>
+                    <span class="bar-val muted">Strong</span>
+                  </div>
+                  <div class="bar-track"><div class="bar-fill" style="width: 78%"></div></div>
+                </div>
+    
+                <div class="bar-row">
+                  <div class="bar-top">
+                    <span class="bar-label">IA + Flows</span>
+                    <span class="bar-val muted">Advanced</span>
+                  </div>
+                  <div class="bar-track"><div class="bar-fill" style="width: 88%"></div></div>
+                </div>
+    
+                <div class="bar-row">
+                  <div class="bar-top">
+                    <span class="bar-label">UI + Prototyping</span>
+                    <span class="bar-val muted">Strong</span>
+                  </div>
+                  <div class="bar-track"><div class="bar-fill" style="width: 78%"></div></div>
+                </div>
+                
+              </div>
+            </div>
+          </article>
+        </div>
+ 
+    <!-- CASE STUDY SECTIONS (use unique IDs for deep links) -->
+    <section id="research" class="section">
+      <div class="container">
+          <h2 class="dash-title">Research</h2>
+        </div>
+        <article class="card" id="research">
+          <div class="card-header">
+            <h3 class="card-title">Evidence from interviews, observations, and synthesis</h3>
+          </div>
+        
+          <div class="card-body">
+            <!-- Keep this short + scannable -->
+            <div class="dash-grid-2">
+              <div>
+                <p class="card-meta">What I did</p>
+                <ul class="legend" aria-label="Research methods">
+                  <li><span>Stakeholder interviews</span><span class="muted">6</span></li>
+                  <li><span>User interviews</span><span class="muted">8</span></li>
+                  <li><span>Workflow shadowing</span><span class="muted">3 sessions</span></li>
+                </ul>
+              </div>
+              <div>
+                <p class="card-meta">Key insight</p>
+                <p class="muted">Add your one-sentence insight here.</p>
+              </div>
+            </div>
+                <p class="card-meta">Key insight</p>
+                <p>
+                  Case managers lost time to context switching and inconsistent note capture,
+                  leading to duplicated work and missed follow-ups.
+                </p>
+              </div>
+        
+        
+            <!-- Image gallery -->
+            <div class="research-gallery" aria-label="Research image gallery">
+              <figure class="research-shot">
+                <a href="images/research-01.png" class="research-link">
+                  <img src="images/research-01.png" alt="Affinity map showing clustered themes from interviews">
+                </a>
+                <figcaption class="muted">Synthesis: Affinity mapping revealed 3 recurring friction points.</figcaption>
+              </figure>
+        
+              <figure class="research-shot">
+                <a href="images/research-02.png" class="research-link">
+                  <img src="images/research-02.png" alt="Screenshot of interview notes highlighting workflow steps">
+                </a>
+                <figcaption class="muted">Workflow: Notes show repeated context switching between systems.</figcaption>
+              </figure>
+        
+              <figure class="research-shot">
+                <a href="images/research-03.png" class="research-link">
+                  <img src="images/research-03.png" alt="User journey map for intake to follow-up">
+                </a>
+                <figcaption class="muted">Journey: The highest drop-off risk occurred after intake.</figcaption>
+              </figure>
+        
+              <figure class="research-shot">
+                <a href="images/research-04.png" class="research-link">
+                  <img src="images/research-04.png" alt="Survey chart showing top pain points ranked by respondents">
+                </a>
+                <figcaption class="muted">Validation: Top pain point was “documentation time.”</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="definition" class="section">
+      <div class="container">
+        <section id="definition" class="section">
+          <div class="dash-header">
+            <h2 class="dash-title">Define</h2>
+            <p class="card-meta">Synthesizing research into direction and scope.</p>
+          </div>
+        
+          <div class="dash-grid-2">
+        
+            <!-- 1️⃣ Problem Statement -->
+            <article class="card">
+              <div class="card-header">
+                <h3>Problem Statement</h3>
+              </div>
+        
+              <div class="card-body">
+                <p class="muted">
+                  1–3 sentence problem statement placeholder describing the core friction
+                  and desired outcome.
+                </p>
+        
+                <ul class="legend">
+                  <li><span>Primary user</span><span class="muted">—</span></li>
+                  <li><span>Main friction</span><span class="muted">—</span></li>
+                  <li><span>Desired outcome</span><span class="muted">—</span></li>
+                </ul>
+              </div>
+            </article>
+        
+        
+            <!-- 3 Empathy Mapping -->
+            <article class="card">
+              <div class="card-header">
+                <h3 class="card-title">Empathy Mapping</h3>
+              </div>
+        
+              <div class="card-body">
+                <ul class="legend">
+                  <li><span>Users feared missing critical notes</span><span class="muted">High</span></li>
+                  <li><span>Context switching caused fatigue</span><span class="muted">Recurring</span></li>
+                </ul>
+        
+                <!-- Image at bottom -->
+                <div class="card-image">
+                  <img src="images/empathy-map.png" alt="Empathy mapping artifact">
+                </div>
+              </div>
+            </article>
+        
+            <!-- 4️⃣ Prioritization -->
+            <article class="card">
+              <div class="card-header">
+                <h3 class="card-title">Value Proposition</h3>
+              </div>
+        
+              <div class="card-body">
+                <ul class="legend">
+                  <li><span>Unified documentation flow</span><span class="muted">High impact</span></li>
+                  <li><span>Automated reminders</span><span class="muted">Phase 2</span></li>
+                </ul>
+        
+                <!-- Image at bottom -->
+                <div class="card-image">
+                  <img src="images/prioritization-matrix.png" alt="Impact vs effort matrix">
+                </div>
+              </div>
+            </article>
+
+            <!-- 2️⃣ Scope -->
+            <article class="card">
+              <div class="card-header">
+                <h3 class="card-title">Scope</h3>
+              </div>
+        
+              <div class="card-body">
+                <div class="dash-grid-2">
+                  <div>
+                    <p class="card-meta">In Scope</p>
+                    <ul class="legend">
+                      <li><span>Feature</span><span class="muted">MVP</span></li>
+                      <li><span>Feature</span><span class="muted">MVP</span></li>
+                    </ul>
+                  </div>
+        
+                  <div>
+                    <p class="card-meta">Out of Scope</p>
+                    <ul class="legend">
+                      <li><span>Feature</span><span class="muted">Later</span></li>
+                      <li><span>Feature</span><span class="muted">Later</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="ideation" class="section">
+      <div class="container">
+        <div class="dash-header">
+          <h2 class="dash-title">Ideation</h2>
+        </div>
+        <div class="card-body card-body--split">
+          <!-- LEFT: text + Y layout -->
+          <div class="card-content">
+            <div class="y-layout">
+              <div class="y-col">
+                <p class="card-meta">Path A</p>
+                <p><strong>Unified Note Capture</strong></p>
+                <p class="muted">Fast documentation + fewer context switches.</p>
+              </div>
+        
+              <div class="y-center" aria-hidden="true">
+                <div class="y-stem"></div>
+                <div class="y-branches">
+                  <div class="y-branch y-branch--left"></div>
+                  <div class="y-branch y-branch--right"></div>
+                </div>
+              </div>
+        
+              <div class="y-col">
+                <p class="card-meta">Path B</p>
+                <p><strong>Intake Summary + Prompts</strong></p>
+                <p class="muted">Better visibility + fewer missed follow-ups.</p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- RIGHT: image -->
+          <div class="card-image">
+            <img src="images/ideation-01.png" alt="Ideation sketches">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototyping" class="section">
+      <div class="container">
+        <div class="infoGrid">
+          <div class="aboutText">
+            <h2>Prototyping</h2>
+            <p>Additional info here</p>
+          </div>
+
+          <div class="aboutBox">
+            <div class="imageStack">
+              <img src="/images/photo.png" alt="Prototype 1">
+              <img src="/images/photo.png" alt="Prototype 2">
+              <img src="/images/photo.png" alt="Prototype 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testing" class="section">
+      <div class="container">
+        <div class="infoGrid">
+          <div class="aboutText">
+            <h2>Testing</h2>
+            <p>Additional info here</p>
+          </div>
+
+          <div class="aboutBox">
+            <div class="imageStack">
+              <img src="/images/photo.png" alt="Testing artifact 1">
+              <img src="/images/photo.png" alt="Testing artifact 2">
+              <img src="/images/photo.png" alt="Testing artifact 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Closing -->
+    <section id="closing" class="section">
+      <div class="container">
+        <div class="dash-header">
+          <h2>Final Thoughts</h2>
+        <div class="twoCol">
+          <div>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contactSection">
+      <div class="contactGrid">
+        <div class="contactIntro">
+          <h2>Let’s Connect</h2>
+          <p>
+            I’m Rachel Reust — a UX/UI designer with a marketing background. If you’re hiring for product design,
+            UX, or UI roles (or need freelance design support), I’d love to chat.
+          </p>
+    
+          <div class="contactActions">
+            <a class="ctaButton" href="mailto:rachel@email.com?subject=Portfolio%20Inquiry">Email Me</a>
+            <a class="secondaryButton" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="secondaryButton" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+    
+          <div class="contactMeta">
+            <p><strong>Timezone:</strong> JST / PT-friendly</p>
+            <p><strong>Typical response:</strong> within 24–48 hours</p>
+          </div>
+        </div>
+        <!-- Right: card (optional) -->
+        <div class="contactCard">
+          <div class="cardImage">
+          <img src="images /contactpic.png"></img></div>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+</body>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</html>
