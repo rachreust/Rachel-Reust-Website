@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rachel Reust Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <nav class="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html#heroGrid" class="mobileNavLogo">
+      <img src="images/RR-logo.png" alt="Rachel Reust home" />
+    </a>
+  
+    <button
+      class="mobileMenuButton"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+      <svg
+        class="menuOpenIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      >
+        <path d="M4 6h16" />
+        <path d="M4 12h16" />
+        <path d="M4 18h16" />
+      </svg>
+  
+      <svg
+        class="menuCloseIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      >
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </button>
+  
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="index.html#heroGrid">Overview</a>
+      <a href="index.html#recruiterBrief">Brief</a>
+
+      <div class="mobileMenuLabel">Case Studies</div>
+  
+      <a href="supervisor-case-management-portal.html">
+        Supervisor Case Management Portal
+      </a>
+  
+      <a href="admin-panel-case-study.html">
+        Admin Reporting Dashboard
+      </a>
+  
+      <a href="mobile-app.html">
+        Mobile Case Management App
+      </a>
+  
+      <a href="index.html#aboutHero">About</a>
+      <a href="index.html#servicesSection">Services</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+  <nav id="navBar" aria-label="Primary">
+    <div class="navProfile">
+      <img
+        src="images/RR-logo.png"
+        class="logoImg"
+        alt="Rachel Reust logo"
+      />
+    </div>
+  
+    <div id="sideNavigation">
+      <a href="#heroGrid" class="navLink">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navIcon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+          />
+        </svg>
+  
+        <span>Overview</span>
+      </a>
+  
+
+      <a href="#recruiterBrief" class="navLink">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navIcon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+          />
+        </svg>
+
+        <span>Brief</span>
+      </a>
+
+      <div class="navGroup">
+        <a class="navTrigger navLink" href="#studies">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="navIcon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+            />
+          </svg>
+  
+          <span>Studies</span>
+        </a>
+  
+        <div class="subMenu">
+          <a href="supervisor-case-management-portal.html">
+            Supervisor Case Management Portal
+          </a>
+  
+          <a href="admin-panel-case-study.html">
+            Admin Reporting Dashboard
+          </a>
+  
+          <a href="mobile-app.html">
+            Mobile Case Management App
+          </a>
+        </div>
+      </div>
+  
+      <a href="#aboutHero" class="navLink">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navIcon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z"
+          />
+        </svg>
+  
+        <span>About</span>
+      </a>
+  
+      <a href="#servicesSection" class="navLink">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navIcon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"
+          />
+  
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+          />
+        </svg>
+  
+        <span>Services</span>
+      </a>
+  
+      <a href="#contact" class="navLink">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navIcon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+          />
+        </svg>
+  
+        <span>Contact</span>
+      </a>
+    </div>
+  
+    <img
+      src="images/portrait.png"
+      class="profilePic"
+      alt="Rachel Reust profile portrait"
+    />
+  
+    <div class="social-icons">
+      <a href="#" class="icon-link" aria-label="LinkedIn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect width="4" height="12" x="2" y="9" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+  
+      <a href="#" class="icon-link" aria-label="Send message">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+          <path d="m21.854 2.147-10.94 10.939" />
+        </svg>
+      </a>
+  
+      <a href="#" class="icon-link" aria-label="Figma">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+          <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+          <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+          <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+          <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+        </svg>
+      </a>
+  
+      <a href="#" class="icon-link" aria-label="GitHub">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+          <path d="M9 18c-4.51 2-5-2-7-2" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <main id="page">
+    <section id="heroGrid">
+      <div class="heroCard">
+        <span class="eyebrow">Rachel Reust • Product Designer • UX/UI</span>
+        <h2>Turning complex workflows into interfaces people don't have to think about.</h2>
+
+        <div class="heroActions">
+          <a class="secondaryButton" href="#aboutHero">About Me</a>
+          <a class="primaryButton" href="#studies">View Case Studies</a>
+        </div>
+      </div>
+
+      <div class="heroImage">
+        <img src="images/PortfolioProPic.png" alt="Rachel portrait" />
+      </div>
+
+      <div class="heroKPI">
+        <div class="kpi">
+          <div class="kpi-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="navIcon">
+              <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32l8.4-8.4Z" />
+              <path d="M5.25 5.25a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3V13.5a.75.75 0 0 0-1.5 0v5.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5h5.25a.75.75 0 0 0 0-1.5H5.25Z" />
+            </svg>
+            <span class="kpi-num">12+</span>
+          </div>
+          <div class="kpi-label">Years in Design</div>
+        </div>
+
+        <div class="kpi">
+          <div class="kpi-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="navIcon">
+              <path fill-rule="evenodd" d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" clip-rule="evenodd" />
+            </svg>
+            <span class="kpi-num">3+</span>
+          </div>
+          <div class="kpi-label">Years SaaS Platform</div>
+        </div>
+
+        <div class="kpi">
+          <div class="kpi-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="navIcon">
+              <path fill-rule="evenodd" d="M12 5.25c1.213 0 2.415.046 3.605.135a3.256 3.256 0 0 1 3.01 3.01c.044.583.077 1.17.1 1.759L17.03 8.47a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 0 0-1.06-1.06l-1.752 1.751c-.023-.65-.06-1.296-.108-1.939a4.756 4.756 0 0 0-4.392-4.392 49.422 49.422 0 0 0-7.436 0A4.756 4.756 0 0 0 3.89 8.282c-.017.224-.033.447-.046.672a.75.75 0 1 0 1.497.092c.013-.217.028-.434.044-.651a3.256 3.256 0 0 1 3.01-3.01c1.19-.09 2.392-.135 3.605-.135Zm-6.97 6.22a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.752-1.751c.023.65.06 1.296.108 1.939a4.756 4.756 0 0 0 4.392 4.392 49.413 49.413 0 0 0 7.436 0 4.756 4.756 0 0 0 4.392-4.392c.017-.223.032-.447.046-.672a.75.75 0 0 0-1.497-.092c-.013.217-.028.434-.044.651a3.256 3.256 0 0 1-3.01 3.01 47.953 47.953 0 0 1-7.21 0 3.256 3.256 0 0 1-3.01-3.01 47.759 47.759 0 0 1-.1-1.759L6.97 15.53a.75.75 0 0 0 1.06-1.06l-3-3Z" clip-rule="evenodd" />
+            </svg>
+            <span class="kpi-num">E2E</span>
+          </div>
+          <div class="kpi-label">Product Ownership</div>
+        </div>
+
+        <div class="kpi">
+          <div class="kpi-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="navIcon">
+              <path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm18 3H3.75v9a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V9Zm-15-3.75A.75.75 0 0 0 4.5 6v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V6a.75.75 0 0 0-.75-.75H5.25Zm1.5.75a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V6Zm3-.75A.75.75 0 0 0 9 6v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V6a.75.75 0 0 0-.75-.75H9.75Z" clip-rule="evenodd" />
+            </svg>
+            <span class="kpi-num">Web + Mobile</span>
+          </div>
+          <div class="kpi-label">Responsive Systems</div>
+        </div>
+      </div>
+    </section>
+
+<!-- =====================================================
+     RECRUITER BRIEF BUILDER
+===================================================== -->
+
+<section
+  class="recruiterBrief"
+  id="recruiterBrief"
+  aria-labelledby="recruiterBriefTitle"
+>
+  <div class="briefReport">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="briefHeader">
+      <h2 id="recruiterBriefTitle">
+        Recruiter Brief Builder
+      </h2>
+
+      <p>
+        Select the qualities most relevant to your role and generate a
+        tailored snapshot of my experience, strengths, and case study fit.
+      </p>
+    </header>
+
+    <!-- =========================
+         FILTER TOOLBAR
+    ========================== -->
+
+    <form
+      class="briefFilterBar"
+      id="briefFilterForm"
+    >
+      <!-- PRODUCT -->
+
+      <details class="briefDropdown">
+        <summary>
+          <span>Product</span>
+
+          <span
+            class="briefDropdownChevron"
+            aria-hidden="true"
+          >
+            ↓
+          </span>
+        </summary>
+
+        <div class="briefDropdownMenu">
+          <p class="briefDropdownHeading">
+            Product Type
+          </p>
+
+          <label class="filterOption">
+            <input
+              type="radio"
+              name="product"
+              value="b2b"
+            />
+            <span>B2B / SaaS</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="radio"
+              name="product"
+              value="internalTools"
+            />
+            <span>Internal Tools</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="radio"
+              name="product"
+              value="mobile"
+            />
+            <span>Mobile Products</span>
+          </label>
+        </div>
+      </details>
+
+      <!-- ROLE -->
+
+      <details class="briefDropdown briefDropdownWide">
+        <summary>
+          <span>Role</span>
+
+          <span
+            class="briefDropdownChevron"
+            aria-hidden="true"
+          >
+            ↓
+          </span>
+        </summary>
+
+        <div class="briefDropdownMenu">
+          <p class="briefDropdownHeading">
+            Select up to three
+          </p>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="productThinking"
+            />
+            <span>Product Thinking</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="workflowSystems"
+            />
+            <span>Workflow &amp; Systems</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="interactionDesign"
+            />
+            <span>Interaction Design</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="interfaceDesign"
+            />
+            <span>Interface Design</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="researchSynthesis"
+            />
+            <span>Research &amp; Synthesis</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="prototyping"
+            />
+            <span>Prototyping</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="role"
+              value="collaboration"
+            />
+            <span>Collaboration</span>
+          </label>
+        </div>
+      </details>
+
+      <!-- EXPERIENCE LEVEL -->
+
+      <details class="briefDropdown">
+        <summary>
+          <span>Experience Level</span>
+
+          <span
+            class="briefDropdownChevron"
+            aria-hidden="true"
+          >
+            ↓
+          </span>
+        </summary>
+
+        <div class="briefDropdownMenu">
+          <p class="briefDropdownHeading">
+            Role Expectation
+          </p>
+
+          <label class="filterOption">
+            <input
+              type="radio"
+              name="experienceLevel"
+              value="developing"
+            />
+            <span>Developing</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="radio"
+              name="experienceLevel"
+              value="strong"
+            />
+            <span>Strong IC</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="radio"
+              name="experienceLevel"
+              value="advanced"
+            />
+            <span>Advanced / Strategic</span>
+          </label>
+        </div>
+      </details>
+
+      <!-- SKILLS -->
+
+      <details class="briefDropdown briefDropdownWide">
+        <summary>
+          <span>Skills</span>
+
+          <span
+            class="briefDropdownChevron"
+            aria-hidden="true"
+          >
+            ↓
+          </span>
+        </summary>
+
+        <div class="briefDropdownMenu">
+          <p class="briefDropdownHeading">
+            Select up to three
+          </p>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="strength"
+              value="communication"
+            />
+            <span>Communication</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="strength"
+              value="userEmpathy"
+            />
+            <span>User Empathy</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="strength"
+              value="stakeholderAlignment"
+            />
+            <span>Stakeholder Alignment</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="strength"
+              value="adaptability"
+            />
+            <span>Adaptability</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="strength"
+              value="teamCollaboration"
+            />
+            <span>Team Collaboration</span>
+          </label>
+
+          <label class="filterOption">
+            <input
+              type="checkbox"
+              name="strength"
+              value="fastPacedDelivery"
+            />
+            <span>Fast-Paced Delivery</span>
+          </label>
+        </div>
+      </details>
+
+      <button
+        class="primaryButton briefBuildButton"
+        id="generateBrief"
+        type="button"
+      >
+        Build Report
+      </button>
+    </form>
+
+    <!-- =========================
+         REPORT DASHBOARD
+    ========================== -->
+
+    <div
+      class="briefReportShell"
+      id="briefResults"
+      aria-live="polite"
+    >
+      <!-- SUMMARY -->
+
+      <section
+        class="card reportSummary is-empty"
+        id="reportSummary"
+      >
+        <span class="reportLabel">
+          Summary
+        </span>
+
+        <h3
+          class="reportSummaryTitle"
+          id="briefSummaryTitle"
+        >
+          Your tailored brief will appear here
+        </h3>
+
+        <p
+          class="reportSummaryCopy"
+          id="briefSummaryCopy"
+        >
+          Select your priorities above, then build the report.
+        </p>
+      </section>
+
+      <div class="reportGrid">
+
+        <!-- =========================
+             PORTFOLIO MATCH CHART
+        ========================== -->
+
+        <section class="card capabilityCard">
+          <div class="reportCardHeader">
+            <div>
+              <span class="reportLabel">
+                Case Study Alignment
+              </span>
+
+              <h3 class="reportCardTitle">
+                Portfolio Match by Selected Criteria
+              </h3>
+            </div>
+          </div>
+
+          <div class="briefChartScroller">
+            <div class="briefChartInner">
+
+              <div class="briefChartBody">
+
+                <!-- Y AXIS -->
+
+                <div
+                  class="briefChartScale"
+                  aria-hidden="true"
+                >
+                  <span>100</span>
+                  <span>75</span>
+                  <span>50</span>
+                  <span>25</span>
+                  <span>0</span>
+                </div>
+
+                <!-- GRAPH CANVAS -->
+
+                <div
+                  class="briefChartCanvas"
+                  id="briefChartCanvas"
+                >
+                  <div class="briefChartGroups">
+
+                    <!-- PRODUCT GROUP -->
+
+                    <div class="briefChartGroup">
+                      <div class="briefChartGroupBars">
+                        <div
+                          class="briefComparisonBar briefComparisonBar--supervisor"
+                          id="bar-supervisor-product"
+                          role="progressbar"
+                          aria-label="Supervisor portal product match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--mobile"
+                          id="bar-mobile-product"
+                          role="progressbar"
+                          aria-label="Mobile app product match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--admin"
+                          id="bar-admin-product"
+                          role="progressbar"
+                          aria-label="Admin dashboard product match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- ROLE GROUP -->
+
+                    <div class="briefChartGroup">
+                      <div class="briefChartGroupBars">
+                        <div
+                          class="briefComparisonBar briefComparisonBar--supervisor"
+                          id="bar-supervisor-role"
+                          role="progressbar"
+                          aria-label="Supervisor portal role match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--mobile"
+                          id="bar-mobile-role"
+                          role="progressbar"
+                          aria-label="Mobile app role match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--admin"
+                          id="bar-admin-role"
+                          role="progressbar"
+                          aria-label="Admin dashboard role match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- EXPERIENCE GROUP -->
+
+                    <div class="briefChartGroup">
+                      <div class="briefChartGroupBars">
+                        <div
+                          class="briefComparisonBar briefComparisonBar--supervisor"
+                          id="bar-supervisor-experience"
+                          role="progressbar"
+                          aria-label="Supervisor portal experience match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--mobile"
+                          id="bar-mobile-experience"
+                          role="progressbar"
+                          aria-label="Mobile app experience match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--admin"
+                          id="bar-admin-experience"
+                          role="progressbar"
+                          aria-label="Admin dashboard experience match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- SKILLS GROUP -->
+
+                    <div class="briefChartGroup">
+                      <div class="briefChartGroupBars">
+                        <div
+                          class="briefComparisonBar briefComparisonBar--supervisor"
+                          id="bar-supervisor-skills"
+                          role="progressbar"
+                          aria-label="Supervisor portal skills match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--mobile"
+                          id="bar-mobile-skills"
+                          role="progressbar"
+                          aria-label="Mobile app skills match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+
+                        <div
+                          class="briefComparisonBar briefComparisonBar--admin"
+                          id="bar-admin-skills"
+                          role="progressbar"
+                          aria-label="Admin dashboard skills match"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          aria-valuenow="0"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p
+                    class="briefChartEmpty"
+                    id="briefChartEmpty"
+                  >
+                    Select your criteria and build the report.
+                  </p>
+                </div>
+              </div>
+
+              <!-- X AXIS LABELS -->
+
+              <div
+                class="briefChartLabels"
+                aria-hidden="true"
+              >
+                <span>Product</span>
+                <span>Role Priorities</span>
+                <span>Experience</span>
+                <span>Skills</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHART LEGEND -->
+
+          <div class="briefChartLegend">
+            <span>
+              <i class="briefLegendDot briefLegendDot--supervisor"></i>
+              Supervisor Portal
+            </span>
+
+            <span>
+              <i class="briefLegendDot briefLegendDot--mobile"></i>
+              Mobile App
+            </span>
+
+            <span>
+              <i class="briefLegendDot briefLegendDot--admin"></i>
+              Admin Dashboard
+            </span>
+          </div>
+        </section>
+
+        <!-- =========================
+             RIGHT COLUMN
+        ========================== -->
+
+        <div class="reportColumn">
+
+          <!-- SKILL EMPHASIS -->
+
+          <section class="card briefSkillCard">
+            <span class="reportLabel">
+              Skillset
+            </span>
+
+            <h3 class="reportCardTitle">
+              Selected Skill Emphasis
+            </h3>
+
+            <div
+              class="briefSkillTrack"
+              aria-label="Selected skill emphasis"
+            >
+              <span
+                class="briefSkillSegment briefSkillSegment--one"
+                id="skillSegment1"
+              ></span>
+
+              <span
+                class="briefSkillSegment briefSkillSegment--two"
+                id="skillSegment2"
+              ></span>
+
+              <span
+                class="briefSkillSegment briefSkillSegment--three"
+                id="skillSegment3"
+              ></span>
+            </div>
+
+            <div
+              class="briefSkillLegend"
+              id="skillLegend"
+            >
+              <p class="briefEmptyCopy">
+                Your selected strengths will appear here.
+              </p>
+            </div>
+          </section>
+
+          <!-- RECOMMENDATION -->
+
+          <article
+            class="card recommendationCard is-empty"
+            id="recommendationCard"
+          >
+            <div class="recommendationBody">
+              <p class="recommendationEyebrow">
+                Recommended Case Study
+              </p>
+
+              <div class="recommendationTitleRow">
+                <h3 id="recommendationTitle">
+                  Waiting for your selections
+                </h3>
+
+                <span
+                  class="recommendationArrow"
+                  aria-hidden="true"
+                >
+                  ↗
+                </span>
+              </div>
+
+              <p id="recommendationDescription">
+                Build the report to receive a tailored case study
+                recommendation.
+              </p>
+
+              <div
+                class="tags recommendationTags"
+                id="recommendationTags"
+                aria-label="Recommended case study attributes"
+              ></div>
+
+              <div class="recommendationReason">
+                <h4 class="recommendationReasonTitle">
+                  Why This Matches
+                </h4>
+
+                <p id="recommendationReason">
+                  The recommendation explanation will appear here.
+                </p>
+              </div>
+            </div>
+
+            <div class="recommendationActions">
+              <a
+                class="primaryButton"
+                id="recommendationLink"
+                href="#"
+                hidden
+              >
+                View Case Study
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    <script src="recruiter-brief.js"></script>
+
+
+
+
+    <section id="studies">
+      <section id="carouselSection">
+        <p class="aboutEyebrow">Case Studies</p>
+
+        <div class="sectionHeader">
+          <h2>Recent Work</h2>
+          <p>A selection of product, UX, and systems-focused work.</p>
+        </div>
+
+        <div class="carouselNav">
+          <a href="#project1" class="carouselBtn prev" aria-label="Previous project">←</a>
+          <a href="#project3" class="carouselBtn next" aria-label="Next project">→</a>
+        </div>
+
+        <div class="carouselWrapper">
+          <div class="carouselTrack">
+            <a class="projectCard" id="project1" href="mobile-app.html">
+              <div class="cardImage"><img src="images/card-img-1.png"></div>
+              <span class="projectMeta">Mobile App</span>
+              <h2>Fieldwork, Not Paperwork</h2>
+              <p>Case managers document, assess, and act — all from their pocket.</p>
+            </a>
+
+            <a class="projectCard" id="project2" href="supervisor-case-management-portal.html">
+              <div class="cardImage"></div>
+              <span class="projectMeta">Supervisor Portal</span>
+              <h2>Oversight Simplified</h2>
+              <p>One portal to review, approve, and keep every case on track.</p>
+            </a>
+
+            <a class="projectCard" id="project3" href="admin-panel-case-study.html">
+              <div class="cardImage"><img src="images/CaseStudyHero.png"></div>
+              <span class="projectMeta">Admin Dashboard</span>
+              <h2>Data, Decision-Ready</h2>
+              <p>Program outcomes and funding, distilled for leadership.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="aboutHero" class="aboutHero">
+      <div class="aboutIntro">
+        <p class="aboutEyebrow">About</p>
+        <h2>Explore My Background</h2>
+        <p>UX/UI designer crafting beautiful, useful, empowering experiences</p>
+      </div>
+
+      <div class="aboutStage">
+        <div class="orbitRow">
+          <button class="orbitBtn orbitBtn--why" data-target="why" aria-label="My Why Behind Design">
+            <span class="orbitBtn__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" />
+              </svg>
+            </span>
+            <span class="orbitBtn__label">My Why</span>
+          </button>
+
+          <button class="orbitBtn orbitBtn--love" data-target="love" aria-label="Things I Love About Design">
+            <span class="orbitBtn__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+              </svg>
+            </span>
+            <span class="orbitBtn__label">What I Love</span>
+          </button>
+
+          <button class="orbitBtn orbitBtn--not-designing" data-target="not-designing" aria-label="When I’m Not Designing">
+            <span class="orbitBtn__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 1 7.38 16.75" />
+                <path d="M12 6v6l4 2" />
+                <path d="M2.5 8.875a10 10 0 0 0-.5 3" />
+                <path d="M2.83 16a10 10 0 0 0 2.43 3.4" />
+                <path d="M4.636 5.235a10 10 0 0 1 .891-.857" />
+                <path d="M8.644 21.42a10 10 0 0 0 7.631-.38" />
+              </svg>
+            </span>
+            <span class="orbitBtn__label">Off the Clock</span>
+          </button>
+
+          <button class="orbitBtn orbitBtn--grow" data-target="grow" aria-label="How I Want to Grow">
+            <span class="orbitBtn__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" />
+                <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" />
+                <path d="M5 21h14" />
+              </svg>
+            </span>
+            <span class="orbitBtn__label">Growth</span>
+          </button>
+
+          <button class="orbitBtn orbitBtn--abroad" data-target="abroad" aria-label="What I’ve Learned Living Abroad">
+            <span class="orbitBtn__icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </span>
+            <span class="orbitBtn__label">Living Abroad</span>
+          </button>
+        </div>
+
+        <img class="portraitBase" src="images/about me hero.png" alt="Portrait of Rachel" />
+
+        <div class="maskLayer" data-panel="why">
+          <video class="maskMedia" autoplay muted loop playsinline>
+            <source src="images/vid1.MP4" type="video/mp4" />
+          </video>
+          <button class="closeBtn" aria-label="Close">✕</button>
+          <div class="panelContent">
+            <h2>My Why Behind Design</h2>
+            <p>
+              I’m driven by a passion for creating delightful experiences that flow clearly, intuitively, and beautifully.
+              What matters most is helping people move faster, think clearer, and make better decisions through design.
+            </p>
+          </div>
+        </div>
+
+        <div class="maskLayer" data-panel="love">
+          <video class="maskMedia" autoplay muted loop playsinline>
+            <source src="images/lovevid.MP4" type="video/mp4" />
+          </video>
+          <button class="closeBtn" aria-label="Close">✕</button>
+          <div class="panelContent">
+            <h2>Things I Love About Design</h2>
+            <p>
+              I find beauty in everyday things — from a well-crafted object to a seamless digital interface.
+              Thoughtful systems, small interactions, and intentional details are what continue to draw me in.
+            </p>
+          </div>
+        </div>
+
+        <div class="maskLayer" data-panel="not-designing">
+          <video class="maskMedia" autoplay muted loop playsinline>
+            <source src="images/video4.MP4" type="video/mp4" />
+          </video>
+          <button class="closeBtn" aria-label="Close">✕</button>
+          <div class="panelContent">
+            <h2>When I’m Not Designing</h2>
+            <p>
+              I'm a Navy spouse currently living in Japan with my husband and three boys. Beyond design, you'll find me
+              volunteering for the military community, horseback riding, painting, exploring new places, or chasing my husky on long walks.
+            </p>
+          </div>
+        </div>
+
+        <div class="maskLayer" data-panel="grow">
+          <img class="maskMedia" src="images/growth.gif" alt="" />
+          <button class="closeBtn" aria-label="Close">✕</button>
+          <div class="panelContent">
+            <h2>How I Want to Grow As A Designer</h2>
+            <p>
+              I’m focused on growing my product thinking, strategic decision-making, and ability to shape systems
+              that create meaningful outcomes at scale.
+            </p>
+          </div>
+        </div>
+
+        <div class="maskLayer" data-panel="abroad">
+          <video class="maskMedia" autoplay muted loop playsinline>
+            <source src="images/fuji2.MP4" type="video/mp4" />
+          </video>
+          <button class="closeBtn" aria-label="Close">✕</button>
+          <div class="panelContent">
+            <h2>What I’ve Learned Living Abroad</h2>
+            <p>
+              Living in Japan taught me that great design doesn’t need translation. It sharpened my eye for iconography,
+              visual signifiers, and the power of intention in everyday design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicesSection" class="servicesSection">
+      <div class="sectionHeader">
+        <p class="aboutEyebrow">Services</p>
+        <h2>What I'm Good At</h2>
+        <p>I design thoughtful, strategic digital experiences that blend beauty and usability.</p>
+      </div>
+
+      <div class="servicesGrid">
+        <article class="serviceCard">
+          <h3>UX Research</h3>
+          <p>User interviews, journey mapping, usability testing, and insight synthesis.</p>
+        </article>
+
+        <article class="serviceCard">
+          <h3>UI Design</h3>
+          <p>Clean, scalable interfaces built with accessibility and clarity in mind.</p>
+        </article>
+
+        <article class="serviceCard">
+          <h3>Product Strategy</h3>
+          <p>Feature prioritization, roadmap thinking, and KPI-driven decision making.</p>
+        </article>
+
+        <article class="serviceCard">
+          <h3>Brand Identity</h3>
+          <p>Visual systems, typography, color strategy, and digital brand expression.</p>
+        </article>
+
+        <article class="serviceCard">
+          <h3>Prototyping</h3>
+          <p>Interactive flows in Figma to validate ideas before development.</p>
+        </article>
+
+        <article class="serviceCard">
+          <h3>Front-End Collaboration</h3>
+          <p>Design systems built with dev handoff and responsive implementation in mind.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contactSection">
+      <div class="contactGrid">
+        <div class="contactIntro">
+          <p class="aboutEyebrow">Contact</p>
+          <h2>Interested In a Project?</h2>
+          <p>
+            I’m a designer with a marketing background. If you’re hiring for product design, UX, or UI roles,
+            or need freelance design support, I’d love to connect.
+          </p>
+
+          <div class="contactActions">
+            <a class="ctaButton" href="mailto:rachel@email.com?subject=Portfolio%20Inquiry">Email Me</a>
+            <a class="secondaryButton" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="secondaryButton" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+
+          <div class="contactMeta">
+            <p><strong>Timezone:</strong> JST / PT-friendly</p>
+            <p><strong>Typical response:</strong> within 24–48 hours</p>
+          </div>
+        </div>
+
+        <aside class="card contactCard">
+          <img src="images/contactpic.png" alt="Rachel portrait" />
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hero = document.querySelector(".aboutHero");
+      const buttons = document.querySelectorAll(".orbitBtn");
+      const panels = document.querySelectorAll(".maskLayer");
+      const closeBtns = document.querySelectorAll(".closeBtn");
+
+      if (!hero || !buttons.length || !panels.length) return;
+
+      let isAnimating = false;
+
+      function closeAll() {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        hero.classList.remove("is-masked");
+
+        buttons.forEach((button) => {
+          button.classList.remove("is-active");
+        });
+
+        let activePanelFound = false;
+
+        panels.forEach((panel) => {
+          if (panel.classList.contains("is-active")) {
+            activePanelFound = true;
+            panel.classList.remove("is-active");
+            panel.classList.add("is-closing");
+
+            setTimeout(() => {
+              panel.classList.remove("is-closing");
+              panel.style.removeProperty("--origin-x");
+              panel.style.removeProperty("--origin-y");
+              isAnimating = false;
+            }, 1100);
+          }
+        });
+
+        if (!activePanelFound) {
+          isAnimating = false;
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (isAnimating) return;
+
+          const target = button.dataset.target;
+          const panel = document.querySelector(`.maskLayer[data-panel="${target}"]`);
+          if (!panel) return;
+
+          const rect = button.getBoundingClientRect();
+          const heroRect = hero.getBoundingClientRect();
+
+          const originX = rect.left + rect.width / 2 - heroRect.left;
+          const originY = rect.top + rect.height / 2 - heroRect.top;
+
+          panels.forEach((p) => {
+            p.classList.remove("is-active", "is-closing");
+          });
+
+          buttons.forEach((b) => b.classList.remove("is-active"));
+
+          panel.style.setProperty("--origin-x", `${originX}px`);
+          panel.style.setProperty("--origin-y", `${originY}px`);
+
+          hero.classList.add("is-masked");
+          button.classList.add("is-active");
+
+          requestAnimationFrame(() => {
+            panel.classList.add("is-active");
+          });
+        });
+      });
+
+      closeBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          closeAll();
+        });
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeAll();
+        }
+      });
+
+      panels.forEach((panel) => {
+        panel.addEventListener("click", (e) => {
+          if (e.target === panel) {
+            closeAll();
+          }
+        });
+      });
+    });
+    
+  </script>
+
+  <script>
+  const mobileMenuButton = document.querySelector(".mobileMenuButton");
+  const mobileMenu = document.querySelector("#mobileMenu");
+  const mobileMenuLinks = document.querySelectorAll("#mobileMenu a");
+
+  mobileMenuButton.addEventListener("click", () => {
+    const isOpen =
+      mobileMenuButton.getAttribute("aria-expanded") === "true";
+
+    mobileMenuButton.setAttribute("aria-expanded", String(!isOpen));
+    mobileMenuButton.setAttribute(
+      "aria-label",
+      isOpen ? "Open navigation menu" : "Close navigation menu"
+    );
+
+    mobileMenu.classList.toggle("isOpen");
+  });
+
+  mobileMenuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenuButton.setAttribute("aria-expanded", "false");
+      mobileMenuButton.setAttribute(
+        "aria-label",
+        "Open navigation menu"
+      );
+
+      mobileMenu.classList.remove("isOpen");
+    });
+  });
+</script>
+</body>
+</html>
