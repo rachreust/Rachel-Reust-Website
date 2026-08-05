@@ -421,12 +421,12 @@
         Full Case Study
       </button>
       <button type="button" class="caseViewBtn" data-view="brief" aria-pressed="false">
-        At a Glance
+        Quick Brief
       </button>
     </div>
 
     <section id="recruiterSummary" class="recruiterSummary" hidden>
-      <p class="aboutEyebrow">90-Second Brief</p>
+      <p class="aboutEyebrow">Quick Brief</p>
       <h1>Mobile Case Management App</h1>
 
       <p class="recruiterSummaryLede">
@@ -448,7 +448,7 @@
       </div>
 
       <div class="recruiterSummaryBlock">
-        <h3>My Role &amp; Approach</h3>
+        <h3>My Contribution &amp; Approach</h3>
         <p>
           As UX/UI lead, I interviewed 25 case managers across shelters,
           veteran homelessness programs, and HMIS-reporting housing services,
@@ -501,28 +501,28 @@
     </section>
 
     <nav class="csNav" aria-label="Case study progress">
-      <a href="#overview" class="csNavStep is-active">
-        <span class="csNavNumber">1</span>
+      <a href="#overview" class="csNavStep is-active" aria-current="step">
+        <span class="csNavNumber">0</span>
         <span class="csNavLabel">Overview</span>
       </a>
-    
+
       <a href="#discovery" class="csNavStep">
-        <span class="csNavNumber">2</span>
+        <span class="csNavNumber">1</span>
         <span class="csNavLabel">Discovery</span>
       </a>
-    
+
       <a href="#ideation-design" class="csNavStep">
-        <span class="csNavNumber">3</span>
+        <span class="csNavNumber">2</span>
         <span class="csNavLabel">Ideation &amp; Design</span>
       </a>
-    
-      <a href="#workflow-validation" class="csNavStep">
-        <span class="csNavNumber">4</span>
+
+      <a href="#validation" class="csNavStep">
+        <span class="csNavNumber">3</span>
         <span class="csNavLabel">Validation</span>
       </a>
-    
+
       <a href="#reflection" class="csNavStep">
-        <span class="csNavNumber">5</span>
+        <span class="csNavNumber">4</span>
         <span class="csNavLabel">Reflection</span>
       </a>
     </nav>
@@ -531,7 +531,7 @@
         <div class="overviewHero">
           <div class="overviewIntroFull">
             <div class="sectionHeader">
-              <p class="aboutEyebrow">UX/UI Case Study</p>
+              <p class="aboutEyebrow">00 / OVERVIEW</p>
               <h1>Mobile Case Management App</h1>
               <p>
                 In this UX/UI case study, I designed a mobile-first case management
@@ -583,8 +583,8 @@
             <div>
               <h3>My Contribution</h3>
               <p>
-                Research synthesis, workflow design, information architecture,
-                wireframes, UI design, prototyping, and usability iteration. Collaboration with Project Managers, Engineers, and Stakeholders. 
+                I collaborated with leadership and end users to gather requirements, worked alongside engineers to assess feasibility, and delivered final design recommendations that shaped the MVP. Research synthesis, workflow design, information architecture,
+                wireframes, UI design, prototyping, and usability iteration.  
               </p>
             </div>
   
@@ -717,7 +717,7 @@
   
       <section id="discovery" class="caseSection">
         <div class="sectionHeader">
-          <p class="aboutEyebrow">01 / Discovery</p>
+          <p class="aboutEyebrow">01 / DISCOVERY</p>
           <h2>Understanding Case Management Work</h2>
         </div>
   
@@ -828,7 +828,7 @@
   
       <section id="ideation-design" class="caseSection">
         <div class="sectionHeader">
-          <p class="aboutEyebrow">02 / Ideation &amp; Design</p>
+          <p class="aboutEyebrow">02 / IDEATION &amp; DESIGN</p>
           <h2>Designing for Fast, Focused Field Work</h2>
           <p>
             The experience focused on the actions case managers needed most often,
@@ -894,7 +894,7 @@
             </div>
   
           <p>
-            Talk-to-text notes, client snapshot, task management, field document access, and guided note templates were included in the MVP. Government database automation was high-impact but dependent on integration, so it followed post-launch. Integrated client records, offline sync, KPI visibility, and advanced analytics were high-impact but low-feasibility, so they were deferred. Lower-impact items like FAQs, profile settings, ratings, recommendations, and the partner marketplace were logged as future-phase opportunities.
+            Talk-to-text notes, client snapshot, task management, field document access, and guided note templates were included in the MVP. Government database integration was high-impact but dependent on integration, so it followed post-launch. Integrated client records, offline sync, KPI visibility, and advanced analytics were high-impact but low-feasibility, so they were deferred. Lower-impact items like FAQs, profile settings, ratings, recommendations, and the partner marketplace were logged as future-phase opportunities.
           </p>
           </article>
   
@@ -973,19 +973,36 @@
             </div>
           </figure>
   
-          <figure class="artifactPlaceholder imageZoom">
-            <div class="artifactInner">
-              <span class="artifactLabel">Final UI Artifact</span>
-              <h4>Final Mobile Screens</h4>
-                <img src="images/finalAppWireframes.png" alt="Final mobile case management app interface screens" loading="lazy" decoding="async">     
-            </div>
-          </figure>
+         <figure class="artifactPlaceholder imageZoom">
+  <div class="artifactInner">
+    <span class="artifactLabel">Final UI Artifact</span>
+
+    <h4>Final Mobile Screens</h4>
+
+    <p style="width: 100%; max-width: none; padding-bottom: 38px;">
+      The final version connected case notes and case planning into one
+      continuous workflow. Persistent domain tabs kept service areas
+      accessible, while goals, barriers, referrals, action steps, milestones,
+      status, and client acknowledgment were organized in one place. A new
+      home screen also provided performance feedback, upcoming tasks, and task
+      management tools, giving case managers a clearer view of both client
+      progress and daily priorities.
+    </p>
+
+    <img
+      src="images/finalAppWireframes.png"
+      alt="Final mobile case management app interface screens"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+</figure>
         </div>
       </section>
 
-      <section id="workflow-validation" class="caseSection">
+      <section id="validation" class="caseSection">
         <div class="card-header">
-          <p class="aboutEyebrow">03 / Validation</p>
+          <p class="aboutEyebrow">03 / VALIDATION</p>
           <h2 class="card-title">Evolving the Case Plan Workflow</h2>
           <p>Focus group sessions revealed that case planning needed to support more than completing a separate form for each service domain. Case managers required a flexible workflow that reflected how plans are created, reviewed, updated, and documented over time. The initial concept used a simple domain-selection flow, followed by individual forms for housing, income, transportation, and other needs. Through collaborative review, the workflow evolved to include:</p>
         </div>
@@ -1036,53 +1053,123 @@
       
         <div class="outcomeCallout">
           <p class="aboutEyebrow">Outcome</p>
-          <p>
-            The workflow evolved from a basic form into a flexible experience aligned
-            with real case-management and documentation requirements.
-          </p>
+       <p>I interviewed 25 case managers who worked across a range of field environments, including homeless shelters, street outreach, and encampments in the woods, before returning to the office to document. This mattered because notes were often partially completed in their vehicles between appointments, then re-entered, sometimes double or triple entered, across multiple databases once they were back at a desk. Participants said reporting requirements were extensive and that the standard three-phase case plan didn't reflect how cases actually evolved. Observing case managers write notes in transit and re-enter the same data into separate systems, I inferred that documentation needed to move with them rather than wait for a return to the office. These insights shaped three key decisions: talk-to-text and guided case note templates to ease in-field documentation, added case-plan phases to match real caseload complexity, and a consolidated case-plan view to cut down on redundant entry.</p>
         </div>
       </section>
       <section id="reflection" class="caseSection">
         <div class="sectionHeader">
-          <p class="aboutEyebrow">04 / Reflection</p>
+          <p class="aboutEyebrow">04 / REFLECTION</p>
           <h2>What I Learned</h2>
         </div>
         <p>
-          This project strengthened my ability to translate complex,
-          high-touch service workflows into a focused mobile product
-          experience that balanced usability, operational needs, and the
-          human realities of field-based work. The final design balanced clear guidance
-          with the flexibility case managers need to use professional judgment, while future iterations
-          would focus on broader pilot testing, offline-sync validation, configurable workflows, integrations,
-          and measuring improvements in documentation speed and task completion.
-        </p>
+          I began by treating case planning as a form-completion problem. Testing showed that it was actually a living workflow that crossed service domains, changed over time, and required shared accountability. That shifted the design from separate static forms to persistent domains, multiple plan phases, milestones, barriers, action steps, referrals, and client acknowledgment.
+        Next steps focused on the deferred and integration-dependent work: building out government database integration, and evaluating offline sync, KPI visibility, and advanced analytics for a future phase once the core mobile workflow was validated in the field.
+      Because the product was an internally tested MVP that never reached public rollout, real-world adoption, long-term data accuracy improvements, and the impact of these features on reporting outcomes remain unvalidated.  
+      </p>
       </section>
   </main>
   
 
   <script>
-    const sections = document.querySelectorAll(".caseStudy section[id]");
-    const navSteps = document.querySelectorAll(".csNavStep");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-  
-          navSteps.forEach((step, index) => {
-            const isCurrent = step.getAttribute("href") === `#${entry.target.id}`;
-  
-            step.classList.toggle("is-active", isCurrent);
-            step.classList.toggle("is-complete", index < [...navSteps].findIndex(
-              item => item.getAttribute("href") === `#${entry.target.id}`
-            ));
-          });
+    (function () {
+      const nav = document.querySelector(".csNav");
+      const sections = document.querySelectorAll(".caseStudy section[id]");
+      const navSteps = document.querySelectorAll(".csNavStep");
+
+      if (!nav || !sections.length || !navSteps.length) return;
+
+      const sectionOrder = [...sections].map((section) => section.id);
+      const visibleSections = new Map(sectionOrder.map((id) => [id, false]));
+
+      function setActiveStep(id) {
+        const activeIndex = sectionOrder.indexOf(id);
+
+        navSteps.forEach((step) => {
+          const stepId = step.getAttribute("href").slice(1);
+          const isActive = stepId === id;
+
+          step.classList.toggle("is-active", isActive);
+          step.classList.toggle(
+            "is-complete",
+            !isActive && sectionOrder.indexOf(stepId) < activeIndex
+          );
+
+          if (isActive) {
+            step.setAttribute("aria-current", "step");
+          } else {
+            step.removeAttribute("aria-current");
+          }
         });
-      },
-      { rootMargin: "-35% 0px -55% 0px", threshold: 0 }
-    );
-  
-    sections.forEach((section) => observer.observe(section));
+      }
+
+      function updateActiveFromVisibility() {
+        let activeId = null;
+
+        sectionOrder.forEach((id) => {
+          if (visibleSections.get(id)) activeId = id;
+        });
+
+        if (activeId) setActiveStep(activeId);
+      }
+
+      let suspendObserver = false;
+      let resumeTimeout;
+      let observer;
+
+      function initObserver() {
+        if (observer) observer.disconnect();
+
+        observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              visibleSections.set(entry.target.id, entry.isIntersecting);
+            });
+
+            if (!suspendObserver) updateActiveFromVisibility();
+          },
+          {
+            rootMargin: `-${nav.getBoundingClientRect().height}px 0px -60% 0px`,
+            threshold: 0,
+          }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+      }
+
+      initObserver();
+
+      let resizeTimeout;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(initObserver, 200);
+      });
+
+      navSteps.forEach((step) => {
+        step.addEventListener("click", (event) => {
+          const id = step.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+
+          if (!target) return;
+
+          event.preventDefault();
+
+          const navHeight = nav.getBoundingClientRect().height;
+          const targetTop =
+            target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+          suspendObserver = true;
+          setActiveStep(id);
+          window.scrollTo({ top: Math.max(targetTop, 0), behavior: "smooth" });
+          history.pushState(null, "", `#${id}`);
+
+          clearTimeout(resumeTimeout);
+          resumeTimeout = setTimeout(() => {
+            suspendObserver = false;
+            updateActiveFromVisibility();
+          }, 700);
+        });
+      });
+    })();
   </script>
 <dialog class="imageModal" id="imageModal" aria-label="Expanded image preview">
   <button class="imageModalClose" type="button" aria-label="Close image preview">
