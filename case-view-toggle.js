@@ -15,16 +15,35 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".caseStudy > .caseSection")
   );
 
-  function applyView(view) {
-    const isBrief = view === "brief";
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
-    summary.hidden = !isBrief;
-    fullSections.forEach((section) => {
-      section.hidden = isBrief;
+  function applyView(view, animate) {
+    const isBrief = view === "brief";
+    const toShow = isBrief ? [summary] : [...fullSections, ...(csNav ? [csNav] : [])];
+    const toHide = isBrief ? [...fullSections, ...(csNav ? [csNav] : [])] : [summary];
+
+    toHide.forEach((el) => {
+      el.hidden = true;
+      el.classList.remove("csView-fade-enter");
     });
 
-    if (csNav) {
-      csNav.hidden = isBrief;
+    toShow.forEach((el) => {
+      el.hidden = false;
+      if (animate && !prefersReducedMotion) {
+        el.classList.add("csView-fade-enter");
+      }
+    });
+
+    if (animate && !prefersReducedMotion) {
+      // Force reflow so the browser registers the entering state before
+      // it's removed, otherwise the transition is skipped.
+      void toShow[0].offsetHeight;
+
+      requestAnimationFrame(() => {
+        toShow.forEach((el) => el.classList.remove("csView-fade-enter"));
+      });
     }
 
     buttons.forEach((button) => {
@@ -38,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const view = button.dataset.view;
 
-      applyView(view);
+      applyView(view, true);
 
       try {
         sessionStorage.setItem(STORAGE_KEY, view);
@@ -56,5 +75,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initialView = "full";
   }
 
-  applyView(initialView);
+  applyView(initialView, false);
 });

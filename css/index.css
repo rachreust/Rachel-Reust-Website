@@ -1670,16 +1670,7 @@ section:target {
   }
 
   .heroImage {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 380px;
-    opacity: 0.12;
-    z-index: 0;
-    pointer-events: none;
+    display: none;
   }
 
   .heroCard {
@@ -1855,14 +1846,7 @@ section:target {
   }
 
   .portraitBase {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    bottom: auto;
-    width: min(70vw, 380px);
-    margin: 0;
-    opacity: 0.12;
-    transform: translate(-50%, -60%);
+    display: none;
   }
 
   .orbitBtn {
@@ -2273,7 +2257,7 @@ body {
 #page.caseStudy .card,
 #page.caseStudy .overviewIntroCard,
 #page.caseStudy .project-summary-card {
-  padding-top: 0;
+  padding: 24px 0 0;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -3588,26 +3572,37 @@ body {
     display: block;
   }
 
-  /* Dropdown menu */
+  /* Full-screen dropdown menu */
   .mobileMenu {
-    position: absolute;
+    position: fixed;
     top: 64px;
     right: 0;
+    bottom: 0;
     left: 0;
 
-    display: none;
+    display: flex;
+    flex-direction: column;
     width: auto;
-    max-height: calc(100vh - 64px);
+    height: calc(100vh - 64px);
+    height: calc(100dvh - 64px);
     padding: 16px 20px 28px;
     overflow-y: auto;
 
     background: #ffffff;
-    border-bottom: 1px solid #dddddd;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.28s ease, transform 0.28s ease, visibility 0s linear 0.28s;
   }
 
   .mobileMenu.isOpen {
-    display: flex;
-    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: opacity 0.28s ease, transform 0.28s ease, visibility 0s linear 0s;
   }
 
   /* Hamburger and close icons */
@@ -3669,6 +3664,10 @@ body {
   body {
     padding-top: 64px;
   }
+
+  body.mobileMenuOpen {
+    overflow: hidden;
+  }
 }
 
 /* =========================================
@@ -3725,6 +3724,27 @@ body {
   color: inherit;
   font-weight: 500;
   opacity: 0.75;
+}
+
+.recruiterSummary,
+.caseStudy > .caseSection,
+.csNav {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.csView-fade-enter {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recruiterSummary,
+  .caseStudy > .caseSection,
+  .csNav {
+    transition: none;
+  }
 }
 
 /* =========================================
